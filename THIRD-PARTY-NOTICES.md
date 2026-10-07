@@ -1,6 +1,6 @@
 # Third-party notices
 
-Model Optimisation Tracker includes or depends on the following third-party software. Each is used under the licence shown. The full MIT licence text is reproduced once at the end and applies to every MIT component listed here with the copyright line given for it. The Zlib licence text is reproduced once for `postprocessing`.
+Model Optimisation Tracker includes or depends on the following third-party software. Each is used under the licence shown. The full MIT licence text is reproduced once at the end and applies to every MIT component listed here with the copyright line given for it.
 
 ## Fluent UI System Icons
 
@@ -43,45 +43,25 @@ SOFTWARE.
 | Rayfin client libraries | `@microsoft/rayfin-client`, `@microsoft/rayfin-core`, `@microsoft/rayfin-auth-provider-fabric`, `@microsoft/rayfin-data`, `@microsoft/rayfin-local-dev` | Copyright (c) Microsoft Corporation. |
 | Vite (build tool, not shipped) | `vite` | Copyright (c) 2019-present, VoidZero Inc. and Vite contributors |
 
-## 3D and animation (added 2026-09-24)
+## Animation (added 2026-09-24)
 
-Copyright lines are copied from each installed package's LICENSE file.
+Copyright lines are copied from each installed package's LICENSE file. The 3D libraries used by the Galaxy page (three.js, React Three Fiber, drei, postprocessing) were removed with that page on 2026-10-02.
 
 | Component | Package | Licence | Copyright |
 |---|---|---|---|
-| three.js | `three` | MIT | Copyright © 2010-2026 three.js authors |
-| React Three Fiber | `@react-three/fiber` | MIT | Copyright (c) 2019-2025 Poimandres (from the [repo LICENSE](https://github.com/pmndrs/react-three-fiber); the npm package ships without one) |
-| drei | `@react-three/drei` | MIT | Copyright (c) 2020 react-spring |
-| React Postprocessing | `@react-three/postprocessing` | MIT | Copyright (c) 2020 react-spring |
-| postprocessing | `postprocessing` | Zlib | Copyright © 2015 Raoul van Rüschen (full text below) |
 | Motion | `motion`, `motion-dom`, `motion-utils` | MIT | Copyright (c) 2024 [Motion](https://motion.dev) B.V. |
 | Motion for React (formerly Framer Motion) | `framer-motion` | MIT | Copyright (c) 2018 Framer B.V. |
 
-**Their dependencies:** 70 packages in total. MIT 58, Apache-2.0 5, ISC 4, BSD-3-Clause 1, Zlib 1, 0BSD 1. None are GPL, LGPL, AGPL or non-commercial. Check again with `npx license-checker --summary` before release.
+## Fonts (added 2026-10-02)
 
-### postprocessing (Zlib License)
+Bundled with the app through Fontsource, so nothing loads from a font CDN.
 
-```
-Copyright © 2015 Raoul van Rüschen
+| Font | Package | Licence | Copyright |
+|---|---|---|---|
+| Space Grotesk | `@fontsource-variable/space-grotesk` | SIL Open Font License 1.1 | Copyright 2020 The Space Grotesk Project Authors |
+| JetBrains Mono | `@fontsource-variable/jetbrains-mono` | SIL Open Font License 1.1 | Copyright 2020 The JetBrains Mono Project Authors |
 
-This software is provided 'as-is', without any express or implied warranty. In
-no event will the authors be held liable for any damages arising from the use of
-this software.
-
-Permission is granted to anyone to use this software for any purpose, including
-commercial applications, and to alter it and redistribute it freely, subject to
-the following restrictions:
-
-1. The origin of this software must not be misrepresented; you must not claim
-   that you wrote the original software. If you use this software in a product,
-   an acknowledgment in the product documentation would be appreciated but is
-   not required.
-
-2. Altered source versions must be plainly marked as such, and must not be
-   misrepresented as being the original software.
-
-3. This notice may not be removed or altered from any source distribution.
-```
+The fonts may be bundled, used and redistributed with software, but not sold on their own; the full OFL text ships in each package's LICENSE file.
 
 ## Images
 
